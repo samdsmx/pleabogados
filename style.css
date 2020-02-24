@@ -681,15 +681,47 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
   .ownavigation .navbar-toggle {
     right: 0;
   }
+  .texto-logo {
+    max-width: 80%;
+  }
 }
 
 /* -  max-width: 639 */
 @media (max-width: 639px) {
-  
+  .texto-logo {
+    max-width: 80%;
+  }
 }
 
 /* -  max-width: 479 */
 @media (max-width: 479px) {
-  
+  .texto-logo {
+    max-width: 80%;
+    margin-top: 25px !important;
+  }
 }
 
+@media only screen and (min-width: 768px) {
+  .texto-logo {
+    margin-top: 45px !important;
+  }
+}
+
+
+/* *******************
+/* Personalizados 
+*/
+
+.borrar-elemento {
+  background-color: red !important;
+}
+
+.texto-logo {
+  color: #b89b5e !important;
+  font-size: 2em;
+  /* margin-top: 45px !important; */
+}
+
+.bottom-footer {
+  background-color: #213455 !important;
+}
