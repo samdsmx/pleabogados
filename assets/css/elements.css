@@ -1196,6 +1196,15 @@ footer .bottom-footer .ownavigation.navbar .navbar-nav > li > a:hover {
   left: 0;
   top: 0;
 }
+.services-content > .simple-text::before {
+  color: #b89b5e;
+  content: "";
+  font-family: FontAwesome;
+  font-size: 14px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 .services-content > a {
   color: #b89b5e;
   display: inline-block;
