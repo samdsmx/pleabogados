@@ -725,3 +725,21 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 .bottom-footer {
   background-color: #213455 !important;
 }
+
+
+.about-details {
+  text-align: justify;
+}
+
+.contact-button {
+  float: right;
+  background-color: #ffffff;
+  color: #222222;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Vollkorn', serif;
+  font-size: 15px;
+  padding: 12px 28px 9px;
+  text-transform: uppercase;
+  height: 42px;
+}
