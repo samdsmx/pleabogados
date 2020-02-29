@@ -743,3 +743,24 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
   text-transform: uppercase;
   height: 42px;
 }
+
+.page-title {
+  text-align: center;
+  color: #b89b5e !important;
+  font-size: 2em;
+}
+
+.page-description {
+  color: #777777;
+  font-size: 15px;
+  letter-spacing: 0.60px;
+  line-height: 26px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 28px;
+  text-align: justify;
+}
+
+.simple-text {
+  text-align: justify;
+}
