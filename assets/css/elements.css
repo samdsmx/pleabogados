@@ -1044,11 +1044,11 @@ footer .bottom-footer .ownavigation.navbar .navbar-nav > li > a:hover {
 
 /* - Services Section */
 .services-section {
-  padding-top: 145px;
+  padding-top: 30px;
 }
 .services-section .srv-tab {
   border: none;
-  margin-top: 27px;
+  margin-top: 20px;
   text-align: center;
 }
 .services-section .srv-tab > li {
