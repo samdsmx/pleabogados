@@ -681,23 +681,44 @@
               <div class="about-details-box">
                 <i><img src="assets/images/about-cnt-icon-1.png" alt="Icon" /></i>
                 <h4>Nuestra Historia</h4>
-                <p>Somos una firma de consultoría y servicios con más de 10 años de experticia, formada por abogados y contadores, que se especializa en ofrecer soluciones fiscales y civiles integrales, para las empresas mexicanas y extranjeras. Nuestra filosofía de trabajo se basa en la atención personalizada a cada uno de nuestros clientes, creando confianza para lograr los objetivos planteados y salvaguardar en todo momento los intereses y el patrimonio de nuestros representados.</p>
+                <p id="historia-texto">Somos una firma de consultoría y servicios con más de 10 años de experticia, formada por abogados y contadores, que se especializa en ofrecer soluciones fiscales y civiles integrales, para las empresas mexicanas y extranjeras. Nuestra filosofía de trabajo se basa en la atención personalizada a cada uno de nuestros clientes, creando confianza para lograr los objetivos planteados y salvaguardar en todo momento los intereses y el patrimonio de nuestros representados.</p>
               </div>
               <div class="about-details-box">
                 <i><img src="assets/images/about-cnt-icon-2.png" alt="Icon" /></i>
                 <h4>Nuestra Misión</h4>
-                <p>Ser la firma a nivel nacional e internacional mejor reconocida por su servicio, honradez, confianza y calidez humana, que da solución real y efectiva a las diversas necesidades de nuestros clientes mediante un servicios integral personalizado haciéndolo sentir seguro, confiable y único.</p>
+                <p id="mision-texto">Ser la firma a nivel nacional e internacional mejor reconocida por su servicio, honradez, confianza y calidez humana, que da solución real y efectiva a las diversas necesidades de nuestros clientes mediante un servicios integral personalizado haciéndolo sentir seguro, confiable y único. </p>
               </div>
               <div class="about-details-box">
                 <i><img src="assets/images/about-cnt-icon-3.png" alt="Icon" /></i>
                 <h4>Nuestra Visión</h4>
-                <p>Contribuir a la sociedad prestando servicios profesionales apegados a la ética y con vocación de servicio, fortaleciendo nuestro compromiso de brindar una asesoría que genere confianza y certeza en nuestros clientes.</p>
+                <p id="vision-texto">Contribuir a la sociedad prestando servicios profesionales apegados a la ética y con vocación de servicio, fortaleciendo nuestro compromiso de brindar una asesoría que genere confianza y certeza en nuestros clientes.</p>
               </div>
             </div>
           </div>
         </div><!-- Container /- -->
       </div><!-- About Section /- -->
-      
+      <script type="text/javascript">
+        let historiaTexto = 'Somos una firma de consultoría y servicios con más de 10 años de experticia, formada por abogados y contadores, que se especializa en ofrecer soluciones fiscales y civiles integrales, para las empresas mexicanas y extranjeras. Nuestra filosofía de trabajo se basa en la atención personalizada a cada uno de nuestros clientes, creando confianza para lograr los objetivos planteados y salvaguardar en todo momento los intereses y el patrimonio de nuestros representados.'
+        let misionTexto = 'Ser la firma a nivel nacional e internacional mejor reconocida por su servicio, honradez, confianza y calidez humana, que da solución real y efectiva a las diversas necesidades de nuestros clientes mediante un servicios integral personalizado haciéndolo sentir seguro, confiable y único.'
+        let visionTexto = 'Contribuir a la sociedad prestando servicios profesionales apegados a la ética y con vocación de servicio, fortaleciendo nuestro compromiso de brindar una asesoría que genere confianza y certeza en nuestros clientes.'
+        let estadosTexto = {
+          historia: false,
+          mision: false,
+          vision: false
+        }
+        function showTextCustom(id, text) {
+          document.getElementById(id).innerText = text
+        }
+        
+        function showTextCut(id, text, limit=250) {
+          document.getElementById(id).innerHTML = text.substr(0, limit)+'...'+`<a onclick="showTextCustom('${id}', '${text}')">leer más</a>`
+        }
+
+        showTextCut('historia-texto', historiaTexto, 245)
+        showTextCut('mision-texto', misionTexto)
+        showTextCut('vision-texto', visionTexto)
+
+      </script>
       
       
       <!-- Newsletter Section -->
@@ -796,10 +817,12 @@
                   <p>Constitución de sociedades.</p>
                   <p>Emisión de las acciones representativas del capital social o de su endoso.</p>
                   <p>Elaboración de proyectos de actas de asamblea, tanto ordinarias como extraordinarias, así como estatutos sociales.</p>
+                  <!--
                   <p>Asientos en los libros societarios, tales como el libro de actas de asambleas de accionistas, libro de registro de accionistas y libro de aumentos o disminuciones de capital.</p>
                   <p>Otorgamiento de poderes generales y especiales.</p>
                   <p>Formalización ante fedatario público de cualquier tipo de documentación corporativa.</p>
                   <p>Elaboración de opiniones sobre movimientos corporativos.</p>
+                  -->
                   <a href="#" title="Leer más">Leer más <i class="fa fa-angle-right"></i></a>
                 </div>
               </div>
@@ -815,12 +838,14 @@
                   <p>Juicio Reivindicatorio</p>
                   <p>Controversias de Arrendamiento Inmobiliario</p>
                   <p>Representación para la realización de convenios judiciales o extrajudiciales</p>
+                  <!--
                   <p>Elaboración y revisión de todo tipo de contratos y convenios</p>
                   <p>Demandas de responsabilidad Civil</p>
                   <p>Recuperación de cartera vencida</p>
                   <p>Cobranza civil y mercantil</p>
                   <p>Indemnización por daños</p>
                   <p>Propiedad y defensa de usufructo</p>
+                  -->
                   <a href="#" title="Leer más">Leer más <i class="fa fa-angle-right"></i></a>
                 </div>
               </div>
@@ -839,6 +864,7 @@
                   <a href="#" title="Leer más">Leer más <i class="fa fa-angle-right"></i></a>
                 </div>
               </div>
+              <!--
               <div role="tabpanel" class="tab-pane" id="derecho-administrativo">
                 <div class="col-md-6 col-sm-6 col-xs-12">
                   <img src="assets/images/service-img.jpg" alt="Services" />
@@ -849,6 +875,7 @@
                   <a href="#" title="Leer más">Leer más <i class="fa fa-angle-right"></i></a>
                 </div>
               </div>
+              -->
               <div role="tabpanel" class="tab-pane" id="derecho-contables">
                 <div class="col-md-6 col-sm-6 col-xs-12">
                   <img src="assets/images/service-img.jpg" alt="Services" />
@@ -858,14 +885,17 @@
                   <p>Determinación y presentación de Impuestos mensuales</p>
                   <p>Determinación y presentación de declaración anual</p>
                   <p>Presentación de declaraciones informativas</p>
+                  <!--
                   <p>Presentación de avisos de compensación</p>
                   <p>Regularización de situación fiscal</p>
                   <p>Registro de operaciones de conformidad con NIF</p>
                   <p>Elaboración de Estados Financieros</p>
                   <p>Envió de contabilidad electrónica</p>
+                  -->
                   <a href="#" title="Leer más">Leer más <i class="fa fa-angle-right"></i></a>
                 </div>
               </div>
+              <!--
               <div role="tabpanel" class="tab-pane" id="derecho-familiar">
                 <div class="col-md-6 col-sm-6 col-xs-12">
                   <img src="assets/images/service-img.jpg" alt="Services" />
@@ -898,6 +928,7 @@
                   <a href="#" title="Leer más">Leer más <i class="fa fa-angle-right"></i></a>
                 </div>
               </div>
+              -->
               <div role="tabpanel" class="tab-pane" id="derecho-mercantil">
                 <div class="col-md-6 col-sm-6 col-xs-12">
                   <img src="assets/images/service-img.jpg" alt="Services" />

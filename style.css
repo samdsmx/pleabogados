@@ -785,3 +785,10 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
   position: relative;
   max-width: 130px;
 }
+
+.texto-cortado {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
