@@ -683,6 +683,7 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
   }
   .texto-logo {
     max-width: 80%;
+    line-height: 26px;
   }
 }
 
@@ -763,4 +764,24 @@ h1,h2,h3,h4,h5,h6,p,a,li,span {
 
 .simple-text {
   text-align: justify;
+}
+
+
+.texto-minusculas {
+  text-transform: lowercase !important;
+}
+
+.text-transform-none {
+  text-transform: none !important;
+}
+
+
+.services-section .srv-tab > li > a > span {
+  padding: 15px 15px;
+  text-align: center;
+  width: auto;
+  margin-right: 0px;
+  margin-bottom: 11px;
+  position: relative;
+  max-width: 130px;
 }
