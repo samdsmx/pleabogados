@@ -274,6 +274,62 @@
         </div>
       </div>
 
+
+      
+    <main id="contactFormSection" class="site-main">
+      <div class="container">
+        <div class="col-md-8 col-xs-6 contact-form">
+          <h3>Contacto</h3>
+          <form id="contactForm" >
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Introduce tu nombre*" name="contact-name" id="input_name" required="" />
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Número telefónico" name="contact-phone" id="input_phone" />
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Introduce tu correo" name="contact-address" id="input_address" />
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" placeholder="Mensaje..." name="textarea-message" id="textarea_message" required=""></textarea>
+            </div>
+            <button title="SEND MESSAGE" type="submit" id="btn_submit" name="post">Enviar mensaje</button>
+            <div id="alert-msg" class="alert-msg"></div>
+          </form>
+        </div>
+      </div>
+      
+    </main>
+
+    <main id="contactFormSectionMessage" class="site-main" style="display: none;">
+      <div class="container">
+        <div class="col-md-8 col-xs-6 contact-form">
+          <h3>Contacto</h3>
+          <h4>Mensaje Enviado</h4>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      let contactForm = document.getElementById('contactForm').onsubmit = (e) => {
+        let nombre = document.getElementById('input_name').value
+        let telefono = document.getElementById('input_phone').value
+        let correo = document.getElementById('input_address').value
+        let mensaje = document.getElementById('textarea_message').value
+
+        $.post('https://us-central1-hnino-com.cloudfunctions.net/contact-form-hnino', {
+          nombre, telefono, correo, mensaje, dominio: 'pleabogados.com'
+        }).done( (data) => {
+          $('#contactFormSection').css('display', 'none')
+          $('#contactFormSectionMessage').css('display', 'block')
+        })
+        
+        return false
+      }
+    </script>
+
+
+<!--
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
@@ -283,6 +339,8 @@
           </div>
         </div>
       </div>
+
+      -->
     
 
 
