@@ -1,0 +1,94 @@
+.local_header {
+  font-size: 24px;
+  color: #777777;
+  line-height: 24px;
+  text-align: left;
+}
+
+.local_row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.local_icon {
+  color:#5C4B51 !important;
+  font-size: 30px;
+  margin: auto;
+}
+
+.local_column_left {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.local_column_rigth {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 4;
+}
+
+.wpcf7, .wpcf7-form {
+  line-height: 0;
+}
+
+.wpcf7-form > p {
+  margin: 0;
+  padding: 0;
+}
+
+.wpcf7-form > p > label {
+  margin: 0;
+  padding: 0;
+}
+
+.wpcf7-form > p > label > br {
+  display: none;
+}
+
+.wpcf7-form > label > span > input, .wpcf7-form > label > span > textarea  {
+  width: 100%;
+}
+
+
+.wpcf7-submit {
+  background: linear-gradient(to bottom,#5C4B51 50%,#323232 50%) no-repeat scroll right bottom/100% 210% #5C4B51;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: #fff;
+  display: inline-block;
+  font-family: Poppins,sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 18.5px 40px;
+  text-align: center;
+  line-height: 1.1;
+  text-shadow: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.wpcf7-submit:hover {
+  background-position: right top;
+  color: #fff;
+  text-shadow: none;
+}
+
+
+
+.contact-schedule {
+  color: #777777;
+  font-size: 1.2em;
+}
+
+.contact-schedule-title {
+  text-align: center;
+  color: #eab409 !important;
+  font-size: 1.5em;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "pleabogados",
+  "version": "1.0.0",
+  "description": "GitHub Pages",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samdsmx/pleabogados.git"
+  },
+  "author": "Héctor Niño Jaimes <hectorr.nj47@gmail.com>",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/samdsmx/pleabogados/issues"
+  },
+  "homepage": "https://github.com/samdsmx/pleabogados#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  }
+}
